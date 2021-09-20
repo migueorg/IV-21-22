@@ -36,7 +36,7 @@ línea con tus iniciales.
 | https://github.com/Antobio17/IV/pull/1 | 0.0.1 | ✓ |
 | <!-- Enlace de J T M --> | | |
 | https://github.com/manujurado1/smartfootballapp/pull/1 | 0.0.1 | ✓ |
-| https://github.com/migueorg/tmp-Proyecto-IV/pull/1 | 0.0.1 | |
+| https://github.com/migueorg/SearchCulture/pull/1 | 0.0.2 | |
 | https://github.com/jesusmarzor/Proyecto-IV/pull/1 | 0.0.1 | ✓  |
 | <!-- Enlace de M B F A --> | | |
 | <!-- Enlace de amerigal --> | | |
