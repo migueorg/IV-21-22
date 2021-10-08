@@ -36,7 +36,7 @@ línea con tus iniciales.
 | [Antobio17](https://github.com/Antobio17/IV/pull/5) | 0.0.2 | ✓ |
 | <!-- Enlace de manujurado1 --> | | |
 | <!-- Enlace de L C G J --> | | |
-| [migueorg](https://github.com/migueorg/SearchCulture/pull/6) | 0.0.2 | |
+| [migueorg](https://github.com/migueorg/SearchCulture/pull/6) | 0.0.2 | | 
 | [jesusmarzor](https://github.com/jesusmarzor/Proyecto-IV/pull/6) | 0.0.3 | ✓ |
 | <!-- Enlace de francisco3207 --> | | |
 | [amerigal](https://github.com/amerigal/proyecto_iv/pull/5) | 0.0.2 | ✓ |
