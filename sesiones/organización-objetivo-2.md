@@ -41,7 +41,7 @@
 | https://github.com/ismaelmontesinos/PracticaIV/pull/3 | |
 | <!-- Enlace de morevi --> | | |
 | https://github.com/Pablont98/IV/pull/8 | @vlljuan99 |
-| https://github.com/Slowmybrosh/PracticaIV/pull/10 |  |
+| https://github.com/Slowmybrosh/PracticaIV/pull/10 | @migueorg |
 | <!-- Enlace de sorozcov --> | | |
 | <!-- Enlace de jlortega00 --> | | |
 | [Xileon310](https://github.com/Xileon310/IV-Project/pull/12) | |
