@@ -36,7 +36,7 @@ línea con tus iniciales.
 | https://github.com/alexespana/Proyecto-IV/pull/16 | 0.0.4 | ✓ |
 | <!-- Enlace de manujurado1 --> | | |
 | <!-- Enlace de L C G J --> | | |
-| <!-- Enlace de migueorg --> | | |
+| https://github.com/Slowmybrosh/DietApp/pull/19 | 0.0.3 | |
 | https://github.com/joaquingv12/Proyecto-IV/pull/21  | 0.0.4 | ✓ |
 | <!-- Enlace de francisco3207 --> | | |
 | [amerigal](https://github.com/danifm1321/proyectoIV/pull/9) | 0.0.3 | ✓ |
