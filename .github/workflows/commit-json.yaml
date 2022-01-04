@@ -27,7 +27,7 @@ jobs:
         run:  zef install  .
       - name: Genera JSON
         run: raku -Ilib scripts/iv-objetivos.raku > data/objetivos.json
-      - name: Sube resultados
+      - name: Sube JSON actualizado
         run: |
           if [ -n "$(git status -s)" ]; then
               git config --global user.email "jjmerelo@gmail.com"
