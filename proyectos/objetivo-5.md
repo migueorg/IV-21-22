@@ -44,7 +44,7 @@
 | [Xileon310](https://github.com/Xileon310/GoParty/pull/39) | 0.0.9 | ✓ |
 | https://github.com/Parka015/serie-motion/pull/21 | 0.0.9 | |
 | <!-- Enlace de edusegrich --> | | |
-| <!-- Enlace de LuisSS20 --> | | |
+| [LuisSS20](https://github.com/LuisSS20/DontWait/pull/24) | 0.0.4 | |
 | <!-- Enlace de juanfran00 --> | | |
 | <!-- Enlace de Albertotc99 --> | | |
 | <!-- Enlace de aleveji --> | | |
