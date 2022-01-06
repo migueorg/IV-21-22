@@ -16,7 +16,7 @@
 | <!-- Enlace de Javierexmar --> | | |
 | <!-- Enlace de MarinoFajardo --> | | |
 | https://github.com/danifm1321/proyectoIV/pull/10  | 0.0.4 |✓  |
-| <!-- Enlace de josevilchez247 --> | | |
+| https://github.com/josevilchez247/Odyssey/pull/20 | 0.0.6 | |
 | https://github.com/arguellesm/faux/pull/11 | 0.0.4 |✓  |
 | <!-- Enlace de DFolchA --> | | |
 | https://github.com/JaimeGM96/Practica-IV/pull/13 | 0.0.6 | ✓|
