@@ -48,11 +48,11 @@ jobs:
         env:
           CONTAINER: ${{ env.docker_user }}/${{ env.repo }}
         run: docker run -t -v `pwd`:/app/test ${CONTAINER,,}
-      - name: Testea contenedor
+      - name: Testea API
         if: ${{env.objetivo >= 9 }}
         env:
           CONTAINER: ${{ env.docker_user }}/${{ env.repo }}
-          ORDEN: ${{steps.source-tests.outputs.ORDEN}}
+          ORDEN: ${{env.ORDEN}}
         run: docker run -t -v `pwd`:/test ${CONTAINER,,} sh -c "${ORDEN} build && ${ORDEN} install && ${ORDEN} test"
   ops-using-API:
     runs-on: ubuntu-latest
