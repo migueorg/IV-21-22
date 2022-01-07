@@ -157,7 +157,7 @@ jobs:
               })
             }
       - name: Comprueba el estado de CI
-        if: ${{env.objetivo >= 6 && env.user != 'gomares' }}
+        if: ${{env.objetivo >= 6 }}
         uses: actions/github-script@v4
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
