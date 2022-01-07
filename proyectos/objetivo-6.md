@@ -4,7 +4,7 @@
 |---------------------------------------------------------------|---------|-----------|
 | <!-- Enlace de noise-kngdm -->                                |         |           |
 | <!-- Enlace de Esturillo98 -->                                |         |           |
-| https://github.com/LuisArostegui/MyWallet/pull/38             |  0.1.0  |           | 
+| https://github.com/LuisArostegui/MyWallet/pull/38             |  0.1.0  |           |
 | <!-- Enlace de Paszser -->                                    |         |           |
 | https://github.com/Mapachana/Predictor-COVID/pull/22          |  0.1.1  | ✓         |
 | https://github.com/eantoniocalo18/IV/pull/39                  |  0.1.1  | ✓         |
@@ -41,7 +41,7 @@
 | https://github.com/Slowmybrosh/DietApp/pull/38                | 0.0.7   | ✓         |
 | <!-- Enlace de sorozcov -->                                   |         |           |
 | <!-- Enlace de jlortega00 -->                                 |         |           |
-| [Xileon310](https://github.com/Xileon310/GoParty/pull/43)     | 0.0.11  |           | 
+| [Xileon310](https://github.com/Xileon310/GoParty/pull/43)     | 0.0.11  |           |
 | <!-- Enlace de Parka015 -->                                   |         |           |
 | <!-- Enlace de edusegrich -->                                 |         |           |
 | <!-- Enlace de LuisSS20 -->                                   |         |           |
