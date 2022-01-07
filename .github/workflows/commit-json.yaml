@@ -8,11 +8,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     permissions:
-      contents: read|write
+      contents: write
     container:
       image: ghcr.io/jj/raku-github-actions
       env:
-        GITHUB_SECRETS: ${{env.GITHUB_SECRETS}}
+        GITHUB_SECRETS: ${{secrets.GITHUB_TOKEN}}
     steps:
       - name: Checkout this
         uses: actions/checkout@v2
