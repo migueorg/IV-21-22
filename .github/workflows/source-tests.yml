@@ -56,6 +56,7 @@ jobs:
       repo: ${{ needs.ops-on-pr.outputs.repo }}
       objetivo: ${{ needs.ops-on-pr.outputs.objetivo }}
       pr_milestone: ${{ needs.ops-on-pr.outputs.pr_milestone }}
+      rama: ${{ needs.ops-on-pr.outputs.rama }}
     steps:
       - name: Descarga fuente
         uses: actions/checkout@v2
@@ -162,14 +163,14 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             const {objetivo_msg, all_good, sorry } = require("./lib/mensajes.js")
-            const { user, repo } = process.env
+            const { user, repo, rama } = process.env
             console.log( objetivo_msg(6) )
             console.log( "» Analizando repo " + repo + " del usuario 🔥" + user )
             const all_checks_before_pag =
                     await github.checks.listForRef.endpoint.merge(
                         { owner: user,
                           repo: repo,
-                          ref: 'HEAD',
+                          ref: rama,
                         })
             console.log( "Checks before pag→ ", all_checks_before_pag)
             const all_checks = await github.paginate( all_checks_before_pag)
@@ -178,7 +179,7 @@ jobs:
                     await github.checks.listForRef.endpoint.merge(
                         { owner: user,
                           repo: repo,
-                          ref: 'HEAD',
+                          ref: rama,
                           status: 'completed'
                         })
             const checks = await github.paginate( checks_before_pag)
