@@ -2,8 +2,7 @@ name: "Genera JSON a partir de los ficheros de objetivos"
 on:
   push:
     paths:
-      - proyectos/objetivos*.md
-      - .github/workflows/commit-json.yaml
+      - proyectos/objetivo*.md
 
 jobs:
   test:
