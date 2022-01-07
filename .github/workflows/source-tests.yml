@@ -52,7 +52,7 @@ jobs:
         if: ${{env.objetivo >= 9 }}
         env:
           CONTAINER: ${{ env.docker_user }}/${{ env.repo }}
-          ORDEN: ${{steps.source-tests.output.ORDEN}}
+          ORDEN: ${{steps.source-tests.outputs.ORDEN}}
         run: docker run -t -v `pwd`:/test ${CONTAINER,,} sh -c "${ORDEN} build && ${ORDEN} install && ${ORDEN} test"
   ops-using-API:
     runs-on: ubuntu-latest
