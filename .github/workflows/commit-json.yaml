@@ -8,7 +8,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: 4write
     container:
       image: ghcr.io/jj/raku-github-actions
       env:
