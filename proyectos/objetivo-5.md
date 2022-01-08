@@ -2,7 +2,7 @@
 
 | URL                                                                 | Versión | Alcanzado |
 |---------------------------------------------------------------------|---------|-----------|
-| [noise-kngdm](https://github.com/noise-kngdm/music-matcher/pull/26) | v0.3.1  |           |
+| [noise-kngdm](https://github.com/noise-kngdm/music-matcher/pull/26) | v0.3.1  |  ✓        |
 | <!-- Enlace de Esturillo98 -->                                      |         |           |
 | [LuisArostegui](https://github.com/LuisArostegui/MyWallet/pull/35)  | 0.0.10  | ✗         |
 | https://github.com/Paszser/ComparerApp/pull/24                      | 0.0.13  | ✗         |
@@ -39,7 +39,7 @@
 | [morevi](https://github.com/morevi/jobcontrol/pull/58)              | 0.0.6   | ✓         |
 | https://github.com/Pablont98/recetas-iv/pull/38                     | 0.0.8   | ✓         |
 | https://github.com/Slowmybrosh/DietApp/pull/36                      | 0.0.5   | ✓         |
-| https://github.com/sorozcov/proyecto-iv-ugr/pull/29                 | 0.0.6   |           |
+| https://github.com/sorozcov/proyecto-iv-ugr/pull/29                 | 0.0.6   | ✗         |
 | <!-- Enlace de jlortega00 -->                                       |         |           |
 | [Xileon310](https://github.com/Xileon310/GoParty/pull/39)           | 0.0.9   | ✓         |
 | https://github.com/Parka015/serie-motion/pull/21                    | 0.0.9   |           |
