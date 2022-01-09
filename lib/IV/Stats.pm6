@@ -12,7 +12,7 @@ method new( Str $file = "proyectos/usuarios.md") {
     my %students;
     my @objetivos;
     my @entregas;
-    @students.map: { %students{$_} = { :objetivo(0), :entrega(0) } };
+    @students.map: { %students{$_} = { :objetivos(set()), :entrega(0) } };
     for glob( "proyectos/objetivo-*.md" ).sort: { $^a cmp $^b} -> $f {
         my ($objetivo) := $f ~~ /(\d+)/;
         my @contenido = $f.IO.lines.grep(/"|"/);
@@ -20,7 +20,7 @@ method new( Str $file = "proyectos/usuarios.md") {
         @entregas[$objetivo] = set();
         for @students.kv -> $index, $usuario {
             if ( @contenido[$index + 2] ~~ /"✓"/ ) {
-                %students{$usuario}<objetivo> = +$objetivo;
+                %students{$usuario}<objetivos> ∪= +$objetivo;
                 @objetivos[$objetivo] ∪= $usuario;
             }
             if ( @contenido[$index + 2] ~~ /"github.com"/ ) {
@@ -35,7 +35,7 @@ method new( Str $file = "proyectos/usuarios.md") {
 submethod BUILD( :%!students, :@!objetivos, :@!entregas) {}
 
 method objetivos-de( Str $user  ) {
-    return %!students{$user}<objetivo>;
+    return %!students{$user}<objetivos>;
 }
 
 method entregas-de( Str $user ) {
