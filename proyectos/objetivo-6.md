@@ -4,7 +4,7 @@
 |---------------------------------------------------------------|---------|-----------|
 | <!-- Enlace de noise-kngdm -->                                |         |           |
 | <!-- Enlace de Esturillo98 -->                                |         |           |
-| https://github.com/LuisArostegui/MyWallet/pull/38             |  0.1.0  |           |
+| https://github.com/LuisArostegui/MyWallet/pull/38             |  0.1.0  | ✓         |
 | https://github.com/Paszser/ComparerApp/pull/27                |  0.1.1  |           |
 | https://github.com/Mapachana/Predictor-COVID/pull/22          |  0.1.1  | ✓         |
 | https://github.com/eantoniocalo18/IV/pull/39                  |  0.1.1  | ✓         |
