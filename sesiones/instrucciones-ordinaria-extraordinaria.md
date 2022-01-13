@@ -39,6 +39,11 @@ profesor les pondrá una recomendación en LinkedIn si así lo solicitan. En tod
 caso, se podrá solicitar revisión de otras personas que estén en la misma
 convocatoria extraordinaria.
 
+Para *hacer la entrega*: si el objetivo no se ha superado, aparte de
+modificar la línea correspondiente con el URL, *se borrará la marca de
+no superado* y se pondrá un asterisco en la línea para que se
+identifique claramente qué se ha de corregir.
+
 También habrá una serie de diferencias con respecto a la convocatoria ordinaria:
 * Se pueden volver a entregar todos los objetivos que se hayan superado, o no,
   en la convocatoria ordinaria.
