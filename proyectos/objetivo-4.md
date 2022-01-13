@@ -20,13 +20,13 @@
 | https://github.com/arguellesm/faux/pull/14                          | 0.0.6   |           |
 | <!-- Enlace de DFolchA -->                                          |         |           |
 | <!-- Enlace de JaimeGM96 -->                                        |         |           |
-| [agr8](https://github.com/agr8/Planner-IV/pull/23)                  | 0.0.6   |  ✓        |
+| [agr8](https://github.com/agr8/Planner-IV/pull/23)                  | 0.0.6   | ✓         |
 | https://github.com/Olasergiolas/Go-AutoEQ/pull/33                   | 0.0.4   | ✓         |
 | https://github.com/lentes4k/cAppjon/pull/25                         | 0.0.11  | ✓         |
 | https://github.com/joaquingv12/Proyecto-IV/pull/23                  | 0.0.7   | ✓         |
 | [gomares](https://github.com/gomares/More-mangas/pull/30)           | 0.0.5   | ✓         |
 | https://github.com/modejota/StoragIV/pull/24                        | 0.0.8   | ✓         |
-| https://github.com/argelion14/Sport-car/pull/37                     | 0.0.12  | ✗         |
+| https://github.com/argelion14/Sport-car/pull/37                     | 0.0.12  |           |*
 | <!-- Enlace de juanmihdz -->                                        |         |           |
 | <!-- Enlace de venrra -->                                           |         |           |
 | https://github.com/Antobio17/IV/pull/28                             | 0.1.1   | ✓         |
