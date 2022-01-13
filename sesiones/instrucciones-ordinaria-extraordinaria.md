@@ -31,6 +31,8 @@
 
 ## Convocatoria extraordinaria
 
+La fecha límite *de entrega* es el **9 de febrero** a las 11:30 de la mañana.
+
 En general, la convocatoria extraordinaria se hará de la misma forma que la
 ordinaria (en este período en el que la docencia ya ha terminado). También se
 sortearán estudiantes aleatorios, aunque en este caso es
