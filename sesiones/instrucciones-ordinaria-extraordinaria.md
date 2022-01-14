@@ -44,7 +44,11 @@ convocatoria extraordinaria.
 Para *hacer la entrega*: si el objetivo no se ha superado, aparte de
 modificar la línea correspondiente con el URL, *se borrará la marca de
 no superado* y se pondrá un asterisco en la línea para que se
-identifique claramente qué se ha de corregir.
+identifique claramente qué se ha de corregir. En esta entrega podéis
+optar por hacerlo sobre la propia rama que hayáis dejado a medio
+terminar o no haya superado el objetivo, aunque dependiendo de los
+problemas señados (por ejemplo, si los commits son incorrectos) será
+mejor hacerlo de nuevo. En todo caso, es decisión vuestra.
 
 También habrá una serie de diferencias con respecto a la convocatoria ordinaria:
 * Se pueden volver a entregar todos los objetivos que se hayan superado, o no,
