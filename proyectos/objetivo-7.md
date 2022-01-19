@@ -31,7 +31,7 @@
 | https://github.com/Antobio17/IV/pull/44                       | 0.1.9   | ✓         |
 | <!-- Enlace de manujurado1 -->                                |         |           |
 | <!-- Enlace de migueorg -->                                   |         |           |
-| https://github.com/jesusmarzor/Peluqueria/pull/51             | 0.0.15  |           |
+| https://github.com/jesusmarzor/Peluqueria/pull/51             | 0.0.15  | ✓         |
 | <!-- Enlace de francisco3207 -->                              |         |           |
 | https://github.com/amerigal/gestor-recibos/pull/42            | 0.0.12  | ✓         |
 | https://github.com/Asmilex/IV/pull/32                         | 0.3.4   | ✓         |
@@ -51,5 +51,5 @@
 | <!-- Enlace de paula1999 -->                                  |         |           |
 | <!-- Enlace de xCyal -->                                      |         |           |
 | <!-- Enlace de vlljuan99 -->                                  |         |           |
-| https://github.com/JAntonioVR/IV-2021-2022/pull/44            | 0.0.13  |   ✗       |
+| https://github.com/JAntonioVR/IV-2021-2022/pull/44            | 0.0.13  | ✗         |
 | <!-- Enlace de pablozafra97 -->                               |         |           |
