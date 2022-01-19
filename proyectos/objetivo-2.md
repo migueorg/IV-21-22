@@ -32,7 +32,7 @@ línea con tus iniciales.
 | https://github.com/agr8/Proyecto-IV/pull/19                     | 0.0.4   | ✓         |
 | https://github.com/Antobio17/IV/pull/21                         | 0.0.4   | ✓         |
 | <!-- Enlace de juanmihdz -->                                    |         |           |
-| https://github.com/LuisArostegui/MyWallet/pull/11               | 0.2.2   |           |
+| https://github.com/LuisArostegui/MyWallet/pull/11               | 0.2.2   | ✗         |
 | https://github.com/alexespana/Proyecto-IV/pull/16               | 0.0.4   | ✓         |
 | <!-- Enlace de manujurado1 -->                                  |         |           |
 | https://github.com/Slowmybrosh/DietApp/pull/19                  | 0.0.3   | ✓         |
@@ -40,7 +40,7 @@ línea con tus iniciales.
 | <!-- Enlace de francisco3207 -->                                |         |           |
 | [amerigal](https://github.com/danifm1321/proyectoIV/pull/9)     | 0.0.3   | ✓         |
 | https://github.com/Balrrach/IV-Proyecto/pull/14                 | 0.0.6   | ✓         |
-| [ismaelmontesinos](https://github.com/LuisSS20/DontWait/pull/8) | 0.0.3   |           |
+| [ismaelmontesinos](https://github.com/LuisSS20/DontWait/pull/8) | 0.0.3   | ✗         |
 | [morevi](https://github.com/francisco3207/IVProyecto/pull/11)   | 0.0.2   | ✓         |
 | https://github.com/Mapachana/Proyecto-IV/pull/8                 | 0.0.3   | ✓         |
 | https://github.com/arguellesm/faux/pull/8                       | 0.0.3   | ✓         |
