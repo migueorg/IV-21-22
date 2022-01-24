@@ -1,6 +1,5 @@
 #!/usr/bin/env perl6
 
-use IO::Glob;
 use IV::Stats;
 
 my $stats = IV::Stats.new;
