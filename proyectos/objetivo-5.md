@@ -4,7 +4,7 @@
 |---------------------------------------------------------------------|---------|-----------|
 | [noise-kngdm](https://github.com/noise-kngdm/music-matcher/pull/26) | v0.3.1  | ✓         |
 | <!-- Enlace de Esturillo98 -->                                      |         |           |
-| [LuisArostegui](https://github.com/LuisArostegui/MyWallet/pull/35)  | 0.0.10  | ✗         |
+| [LuisArostegui](https://github.com/LuisArostegui/MyWallet/pull/35)  | 0.1.10  | *         |
 | https://github.com/Paszser/ComparerApp/pull/24                      | 0.0.13  | ✗         |
 | https://github.com/Mapachana/Predictor-COVID/pull/19                | 0.0.9   | ✓         |
 | https://github.com/eantoniocalo18/IV/pull/36                        | 0.0.11  | ✓         |
