@@ -2,8 +2,9 @@
   "auth" : "github:JJ",
   "authors" : ["JJ Merelo"],
   "depends" : [
-      "IO::Glob",
-      "Text::CSV"
+    "IO::Glob",
+    "Text::CSV",
+    "Git::File::History",
   ],
   "description" : "Scripts Raku para ayudar con la asignatura IV",
   "license" : "Artistic-2.0",

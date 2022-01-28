@@ -1,4 +1,5 @@
 use IO::Glob;
+use Git::File::History;
 
 unit class IV::Stats;
 
@@ -16,6 +17,7 @@ method new( Str $file = "proyectos/usuarios.md") {
     my @objetivos;
     my @entregas;
     @student-list.map: { %students{$_} = { :objetivos(set()), :entrega(0) } };
+    my $file-history = Git::File::History.new();
     for glob( "proyectos/objetivo-*.md" ).sort: { $^a cmp $^b} -> $f {
         my ($objetivo) := $f ~~ /(\d+)/;
         my @contenido = $f.IO.lines.grep(/"|"/);
@@ -30,6 +32,10 @@ method new( Str $file = "proyectos/usuarios.md") {
                 %students{$usuario}<entrega> = +$objetivo ;
                 @entregas[$objetivo] ∪= $usuario;
             }
+        }
+
+        for $file-history.history-of( $f ) -> $file-version {
+            say "$f $file-version<date>";
         }
     }
     self.bless( :@student-list, :%students, :@objetivos, :@entregas );
