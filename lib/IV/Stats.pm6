@@ -1,6 +1,21 @@
 use IO::Glob;
 use Git::File::History;
 
+enum Estados <CUMPLIDO ENVIADO INCOMPLETO>;
+
+sub estado-objetivos( @student-list, $contenido) is export {
+    my @contenido = $contenido.split("\n").grep(/"|"/);
+    my %estados;
+    for @student-list.kv -> $index, $usuario {
+        given  @contenido[$index + 2] {
+            when /"✓"/ { %estados{$usuario} = CUMPLIDO }
+            when /"✗"/ { %estados{$usuario} = INCOMPLETO }
+            when /"github.com"/  { %estados{$usuario} = ENVIADO }
+        }
+    }
+    return %estados;
+}
+
 unit class IV::Stats;
 
 has @!student-list;
@@ -34,8 +49,8 @@ method new( Str $file = "proyectos/usuarios.md") {
             }
         }
 
-        for $file-history.history-of( $f ) -> $file-version {
-            say "$f $file-version<date>";
+        for $file-history.history-of( ~$f )<> -> $file-version {
+            say ~$f, " ", $file-version<date>;
         }
     }
     self.bless( :@student-list, :%students, :@objetivos, :@entregas );
