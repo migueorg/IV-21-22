@@ -4,7 +4,6 @@ use Test;
 use IV::Stats;
 
 my $stats = IV::Stats.new;
-say $stats;
 
 ok( $stats, "Can create object");
 say $stats.objetivos-de('Asmilex');
@@ -23,4 +22,5 @@ my @student-list = $stats.estudiantes;
 my $contenido = "proyectos/objetivo-0.md".IO.slurp;
 my %objetivos-cumplidos = estado-objetivos( @student-list, $contenido );
 is( %objetivos-cumplidos.keys.elems, 49, "Objetivos cumplidos correctos" );
+
 done-testing;

@@ -32,7 +32,9 @@ method new( Str $file = "proyectos/usuarios.md") {
     my @objetivos;
     my @entregas;
     @student-list.map: { %students{$_} = { :objetivos(set()), :entrega(0) } };
-    my $file-history = Git::File::History.new();
+    my $file-history = Git::File::History.new(
+                :files("proyectos/objetivo-*.md")
+            );
     for glob( "proyectos/objetivo-*.md" ).sort: { $^a cmp $^b} -> $f {
         my ($objetivo) := $f ~~ /(\d+)/;
         my @contenido = $f.IO.lines.grep(/"|"/);
