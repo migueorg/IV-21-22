@@ -52,7 +52,7 @@ method new( Str $file = "proyectos/usuarios.md") {
         }
 
         for $file-history.history-of( ~$f )<> -> $file-version {
-            say ~$f, " ", $file-version<date>;
+            my $this-version = $file-version<contenido>;
         }
     }
     self.bless( :@student-list, :%students, :@objetivos, :@entregas );
