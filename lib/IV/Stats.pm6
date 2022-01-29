@@ -51,8 +51,12 @@ method new( Str $file = "proyectos/usuarios.md") {
             }
         }
 
-        for $file-history.history-of( ~$f )<> -> $file-version {
-            my $this-version = $file-version<contenido>;
+        my @fechas-entregas;
+        for $file-history.history-of( ~$f )<> -> %file-version {
+            my $this-version = %file-version<state>;
+            my %estado-objetivos = estado-objetivos( @student-list,
+                    $this-version);
+
         }
     }
     self.bless( :@student-list, :%students, :@objetivos, :@entregas );
