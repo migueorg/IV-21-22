@@ -6,6 +6,7 @@ enum Estados <CUMPLIDO ENVIADO INCOMPLETO>;
 sub estado-objetivos( @student-list, $contenido) is export {
     my @contenido = $contenido.split("\n").grep(/"|"/);
     my %estados;
+    say @contenido;
     for @student-list.kv -> $index, $usuario {
         given  @contenido[$index + 2] {
             when /"✓"/ { %estados{$usuario} = CUMPLIDO }
@@ -14,6 +15,11 @@ sub estado-objetivos( @student-list, $contenido) is export {
         }
     }
     return %estados;
+}
+
+sub lista-estudiantes( Str $file = "proyectos/usuarios.md" ) is export {
+    $file.IO.slurp.lines.grep( /"<!--"/ )
+            .map( *.split( "--" )[1].split(" ")[3]);
 }
 
 unit class IV::Stats;
@@ -27,8 +33,7 @@ has @!fechas-entregas;
 my @cumplimiento=[.05,.075, .15, .075, .15, 0.05, 0.05, 0.1, 0.1, 0.1, 0.1 ];
 
 method new( Str $file = "proyectos/usuarios.md") {
-    my @student-list = $file.IO.slurp.lines.grep( /"<!--"/ )
-        .map( *.split( "--" )[1].split(" ")[3]);
+    my @student-list = lista-estudiantes( $file );
     my %students;
     my @objetivos;
     my @entregas;
