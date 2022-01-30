@@ -140,9 +140,8 @@ method notas( --> Seq ) {
 
 method fechas-entregas-to-CSV() {
 
-    my $csv = "Objetivo;Estudiante;Entrega;Correccion;Incompleto";
+    my $csv = "Objetivo;Estudiante;Entrega;Correccion;Incompleto\n";
     for @!fechas-entregas.kv -> $o, %fechas {
-        say "$o\n%fechas";
         for %fechas.kv -> $estudiante, %datos {
             my $fila = "$o; $estudiante;";
             for <entrega corregido> -> $e {
