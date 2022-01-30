@@ -1,7 +1,7 @@
 use IO::Glob;
 use Git::File::History;
 
-enum Estados <CUMPLIDO ENVIADO INCOMPLETO>;
+enum Estados is export <CUMPLIDO ENVIADO INCOMPLETO>;
 
 sub estado-objetivos( @student-list, $contenido) is export {
     my @contenido = $contenido.split("\n").grep(/"|"/);

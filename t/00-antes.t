@@ -12,4 +12,6 @@ $contenido = "proyectos/objetivo-9.md".IO.slurp;
 %objetivos-cumplidos = estado-objetivos( @student-list, $contenido );
 is( %objetivos-cumplidos.keys.elems, 2, "Objetivos 9 cumplidos correctos" );
 
+is %objetivos-cumplidos<amerigal>, CUMPLIDO, "Bien extraidos objetivos";
+
 done-testing;
