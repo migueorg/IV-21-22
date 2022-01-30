@@ -1,10 +1,10 @@
+use IO::Glob;
 use Git::File::History;
+use IV::Stats;
 
 enum Estados is export <CUMPLIDO ENVIADO INCOMPLETO NINGUNO>;
 
 sub estado-objetivos( @student-list, $contenido) is export {
-    say "CONTENIDO -----------------------";
-    say $contenido;
     my @contenido = $contenido.split("\n").grep(/"|"/)[2..*];
     my %estados;
     for @student-list.kv -> $index, $usuario {
@@ -25,12 +25,16 @@ unit class IV::Stats::Fechas;
 
 has @!fechas-entregas;
 
+submethod BUILD( :@!fechas-entregas) {}
+
 method new() {
+    my @student-list = lista-estudiantes;
     my $file-history = Git::File::History.new(
             :files("proyectos/objetivo-*.md")
             );
     my @fechas-entregas;
     for glob( "proyectos/objetivo-*.md" ).sort: { $^a cmp $^b} -> $f {
+        my ($objetivo) := $f ~~ /(\d+)/;
         @fechas-entregas[$objetivo]={};
         for $file-history.history-of( ~$f )<> -> %file-version {
             my $this-version = %file-version<state>;
@@ -64,6 +68,7 @@ method new() {
             }
         }
     }
+    self.bless( :@fechas-entregas);
 }
 
 method fechas-entregas-to-CSV() {
