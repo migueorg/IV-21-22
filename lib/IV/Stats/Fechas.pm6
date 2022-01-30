@@ -40,7 +40,6 @@ method new() {
             my $fecha = %file-version<date>;
             my %estado-objetivos = estado-objetivos( @student-list,
                     $this-version);
-            say %estado-objetivos;
             for %estado-objetivos.kv -> $estudiante, $estado {
                 my $estado-actual =
                         @fechas-entregas[$objetivo]{$estudiante}<entrega>;
