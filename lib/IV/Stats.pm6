@@ -35,6 +35,7 @@ method new( Str $file = "proyectos/usuarios.md") {
     my $file-history = Git::File::History.new(
                 :files("proyectos/objetivo-*.md")
             );
+    my @fechas-entregas;
     for glob( "proyectos/objetivo-*.md" ).sort: { $^a cmp $^b} -> $f {
         my ($objetivo) := $f ~~ /(\d+)/;
         my @contenido = $f.IO.lines.grep(/"|"/);
@@ -51,12 +52,37 @@ method new( Str $file = "proyectos/usuarios.md") {
             }
         }
 
-        my @fechas-entregas;
         for $file-history.history-of( ~$f )<> -> %file-version {
             my $this-version = %file-version<state>;
+            my $fecha = %file-version<date>;
             my %estado-objetivos = estado-objetivos( @student-list,
                     $this-version);
-
+            say %estado-objetivos;
+            for %estado-objetivos.kv -> $estudiante, $estado {
+                my $estado-actual = @fechas-entregas[$objetivo]{$estudiante};
+                given $estado {
+                    when ENVIADO {
+                        if !$estado-actual {
+                            @fechas-entregas[$objetivo]{$estudiante}<entrega>
+                                    = $fecha;
+                        }
+                    }
+                    when CUMPLIDO {
+                        if $estado-actual == ENVIADO {
+                            @fechas-entregas[$objetivo]{$estudiante}<corregido>
+                                    = $fecha;
+                        }
+                    }
+                    when INCOMPLETO {
+                        if $estado-actual == ENVIADO {
+                            @fechas-entregas[$objetivo]{$estudiante}<corregido>
+                                    = $fecha;
+                            @fechas-entregas[$objetivo]{$estudiante}<incompleto> = True;
+                        }
+                    }
+                }
+                say @fechas-entregas;
+            }
         }
     }
     self.bless( :@student-list, :%students, :@objetivos, :@entregas );
