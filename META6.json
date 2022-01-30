@@ -4,7 +4,7 @@
   "depends" : [
     "IO::Glob",
     "Text::CSV",
-    "Git::File::History",
+    "Git::File::History"
   ],
   "description" : "Scripts Raku para ayudar con la asignatura IV",
   "license" : "Artistic-2.0",

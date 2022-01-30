@@ -6,7 +6,6 @@ use IV::Stats;
 my $stats = IV::Stats.new;
 
 ok( $stats, "Can create object");
-say $stats.objetivos-de('Asmilex');
 cmp-ok( $stats.objetivos-de('Asmilex').elems, ">=", 4, "Objetivos hechos");
 cmp-ok( $stats.entregas-de('Asmilex'), ">=", 5, "Entregas hechas");
 ok( "Asmilex" ∈ $stats.cumple-objetivo(4), "Conjuntos creados");
