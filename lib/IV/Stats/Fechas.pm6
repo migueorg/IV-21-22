@@ -51,7 +51,8 @@ method new() {
                         }
                     }
                     when CUMPLIDO {
-                        if $estado-actual {
+                        if $estado-actual
+                                && !@fechas-entregas[$objetivo]{$estudiante}<corregido> {
                             @fechas-entregas[$objetivo]{$estudiante}<corregido>
                                     = $fecha;
                         }
