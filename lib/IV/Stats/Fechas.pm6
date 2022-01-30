@@ -17,7 +17,6 @@ sub estado-objetivos( @student-list, $contenido) is export {
             %estados{$usuario} = ENVIADO
         }
     }
-    say %estados;
     return %estados;
 }
 
@@ -28,7 +27,7 @@ has @!fechas-entregas;
 submethod BUILD( :@!fechas-entregas) {}
 
 method new() {
-    my @student-list = lista-estudiantes;
+    my @student-list = lista-estudiantes();
     my $file-history = Git::File::History.new(
             :files("proyectos/objetivo-*.md")
             );
@@ -41,9 +40,10 @@ method new() {
             my $fecha = %file-version<date>;
             my %estado-objetivos = estado-objetivos( @student-list,
                     $this-version);
+            say %estado-objetivos;
             for %estado-objetivos.kv -> $estudiante, $estado {
-                my $estado-actual = @fechas-entregas[$objetivo]{$estudiante}
-                        // NINGUNO;
+                my $estado-actual =
+                        @fechas-entregas[$objetivo]{$estudiante}<entrega>;
                 given $estado {
                     when ENVIADO {
                         if !$estado-actual {
@@ -52,13 +52,13 @@ method new() {
                         }
                     }
                     when CUMPLIDO {
-                        if $estado-actual == ENVIADO {
+                        if $estado-actual {
                             @fechas-entregas[$objetivo]{$estudiante}<corregido>
                                     = $fecha;
                         }
                     }
                     when INCOMPLETO {
-                        if $estado-actual == ENVIADO {
+                        if $estado-actual {
                             @fechas-entregas[$objetivo]{$estudiante}<corregido>
                                     = $fecha;
                             @fechas-entregas[$objetivo]{$estudiante}<incompleto> = True;
@@ -71,7 +71,11 @@ method new() {
     self.bless( :@fechas-entregas);
 }
 
-method fechas-entregas-to-CSV() {
+method entregas-de( Int $objetivo, $estudiante ){
+    return @!fechas-entregas[$objetivo]{$estudiante};
+}
+
+method to-CSV() {
     my $csv = "Objetivo;Estudiante;Entrega;Correccion;Incompleto\n";
     for @!fechas-entregas.kv -> $o, %fechas {
         for %fechas.kv -> $estudiante, %datos {
