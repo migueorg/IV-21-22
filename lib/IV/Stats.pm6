@@ -4,6 +4,8 @@ use Git::File::History;
 enum Estados is export <CUMPLIDO ENVIADO INCOMPLETO NINGUNO>;
 
 sub estado-objetivos( @student-list, $contenido) is export {
+    say "CONTENIDO -----------------------";
+    say $contenido;
     my @contenido = $contenido.split("\n").grep(/"|"/)[2..*];
     my %estados;
     for @student-list.kv -> $index, $usuario {
