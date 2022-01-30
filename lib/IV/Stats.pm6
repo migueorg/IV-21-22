@@ -1,19 +1,22 @@
 use IO::Glob;
 use Git::File::History;
 
-enum Estados is export <CUMPLIDO ENVIADO INCOMPLETO>;
+enum Estados is export <CUMPLIDO ENVIADO INCOMPLETO NINGUNO>;
 
 sub estado-objetivos( @student-list, $contenido) is export {
-    my @contenido = $contenido.split("\n").grep(/"|"/);
+    my @contenido = $contenido.split("\n").grep(/"|"/)[2..*];
     my %estados;
-    say @contenido;
     for @student-list.kv -> $index, $usuario {
-        given  @contenido[$index + 2] {
-            when /"✓"/ { %estados{$usuario} = CUMPLIDO }
-            when /"✗"/ { %estados{$usuario} = INCOMPLETO }
-            when /"github.com"/  { %estados{$usuario} = ENVIADO }
+        my $marca = @contenido[$index] // "";
+        if  $marca  ~~  /"✓"/ {
+            %estados{$usuario} = CUMPLIDO;
+        } elsif  $marca ~~ /"✗"/  {
+            %estados{$usuario} = INCOMPLETO;
+        } elsif  @contenido[$index] ~~ /"github.com"/  {
+            %estados{$usuario} = ENVIADO
         }
     }
+    say %estados;
     return %estados;
 }
 
@@ -65,7 +68,8 @@ method new( Str $file = "proyectos/usuarios.md") {
             my %estado-objetivos = estado-objetivos( @student-list,
                     $this-version);
             for %estado-objetivos.kv -> $estudiante, $estado {
-                my $estado-actual = @fechas-entregas[$objetivo]{$estudiante};
+                my $estado-actual = @fechas-entregas[$objetivo]{$estudiante}
+                        // NINGUNO;
                 given $estado {
                     when ENVIADO {
                         if !$estado-actual {
