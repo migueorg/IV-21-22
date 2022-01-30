@@ -14,7 +14,8 @@ for <entrega corregido> -> $k {
     ok( %una-fecha{$k}, "$k correcto" );
 }
 
-my @csv = fechas.to-CSV.split("\n");
+my @csv = $fechas.to-CSV.split("\n");
 cmp-ok( @csv.elems, ">", 250, "CSV generado guay");
+like( @csv.tail(2), /amerigal/, "Last row OK");
 
 done-testing;

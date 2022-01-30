@@ -13,7 +13,7 @@ sub estado-objetivos( @student-list, $contenido) is export {
             %estados{$usuario} = CUMPLIDO;
         } elsif  $marca ~~ /"✗"/  {
             %estados{$usuario} = INCOMPLETO;
-        } elsif  @contenido[$index] ~~ /"github.com"/  {
+        } elsif  $marca ~~ /"github.com"/  {
             %estados{$usuario} = ENVIADO
         }
     }
@@ -76,19 +76,21 @@ method entregas-de( Int $objetivo, $estudiante ){
 }
 
 method to-CSV() {
-    my $csv = "Objetivo;Estudiante;Entrega;Correccion;Incompleto\n";
+    my $csv = "Objetivo;Estudiante;Entrega;Correccion;Incompleto";
     for @!fechas-entregas.kv -> $o, %fechas {
+        next unless %fechas;
         for %fechas.kv -> $estudiante, %datos {
-            my $fila = "$o; $estudiante;";
+            my $fila = "\n$o; $estudiante;";
             for <entrega corregido> -> $e {
-                $fila ~= %datos{$e} ~ ";";
+                my $dato = %datos{$e} // "";
+                $fila ~= "$dato;";
             }
             if %datos<incompleto> {
                 $fila ~= "Incompleto";
             } else {
                 $fila ~= "Completo";
             }
-            $csv ~= $fila ~ "\n";
+            $csv ~= $fila;
         }
 
     }
