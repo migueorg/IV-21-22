@@ -53,6 +53,7 @@ method new( Str $file = "proyectos/usuarios.md") {
             }
         }
 
+        @fechas-entregas[$objetivo]={};
         for $file-history.history-of( ~$f )<> -> %file-version {
             my $this-version = %file-version<state>;
             my $fecha = %file-version<date>;
@@ -60,7 +61,6 @@ method new( Str $file = "proyectos/usuarios.md") {
                     $this-version);
             for %estado-objetivos.kv -> $estudiante, $estado {
                 my $estado-actual = @fechas-entregas[$objetivo]{$estudiante};
-                say "$estado-actual $estado";
                 given $estado {
                     when ENVIADO {
                         if !$estado-actual {
@@ -141,8 +141,9 @@ method notas( --> Seq ) {
 method fechas-entregas-to-CSV() {
 
     my $csv = "Objetivo;Estudiante;Entrega;Correccion;Incompleto";
-    for @!fechas-entregas -> $o {
-        for @!fechas-entregas[$o].kv -> $estudiante, %datos {
+    for @!fechas-entregas.kv -> $o, %fechas {
+        say "$o\n%fechas";
+        for %fechas.kv -> $estudiante, %datos {
             my $fila = "$o; $estudiante;";
             for <entrega corregido> -> $e {
                 $fila ~= %datos{$e} ~ ";";
