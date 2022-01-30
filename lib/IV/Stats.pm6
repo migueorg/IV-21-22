@@ -60,6 +60,7 @@ method new( Str $file = "proyectos/usuarios.md") {
                     $this-version);
             for %estado-objetivos.kv -> $estudiante, $estado {
                 my $estado-actual = @fechas-entregas[$objetivo]{$estudiante};
+                say "$estado-actual $estado";
                 given $estado {
                     when ENVIADO {
                         if !$estado-actual {
@@ -155,4 +156,5 @@ method fechas-entregas-to-CSV() {
         }
 
     }
+    return $csv;
 }
