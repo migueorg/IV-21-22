@@ -15,15 +15,6 @@ ok( $stats.bajas-totales(0), "Devuelve bajas totales");
 cmp-ok( $stats.objetivos.elems, ">=", 4, "Objetivos hasta ahora" );
 cmp-ok( $stats.estudiantes.elems, ">=", 10, "Estudiantes suficientes");
 
-my @student-list = $stats.estudiantes;
-my $contenido = "proyectos/objetivo-0.md".IO.slurp;
-my %objetivos-cumplidos = estado-objetivos( @student-list, $contenido );
-is( %objetivos-cumplidos.keys.elems, 49, "Objetivos cumplidos correctos" );
 
-$contenido = "proyectos/objetivo-9.md".IO.slurp;
-%objetivos-cumplidos = estado-objetivos( @student-list, $contenido );
-is( %objetivos-cumplidos.keys.elems, 2, "Objetivos 9 cumplidos correctos" );
-
-say $stats.fechas-entregas-to-CSV;
 
 done-testing;
