@@ -2,6 +2,7 @@
 
 use Test;
 use IV::Stats;
+use IV::Stats::Fechas;
 
 my @student-list = lista-estudiantes();
 my $contenido = "proyectos/objetivo-0.md".IO.slurp;

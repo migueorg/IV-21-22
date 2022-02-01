@@ -1,6 +1,7 @@
 #!/usr/bin/env raku
 
 use Test;
+use IV::Stats;
 use IV::Stats::Fechas;
 
 my $fechas = IV::Stats::Fechas.new;
@@ -15,7 +16,7 @@ for <entrega corregido> -> $k {
 }
 
 my @csv = $fechas.to-CSV.split("\n");
-cmp-ok( @csv.elems, ">", 250, "CSV generado guay");
+cmp-ok( @csv.elems, ">", 260, "CSV generado guay");
 like( @csv.tail(2), /amerigal/, "Last row OK");
 
 done-testing;
