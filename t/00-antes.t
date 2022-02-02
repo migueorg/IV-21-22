@@ -12,7 +12,7 @@ is( %objetivos-cumplidos.keys.elems, 49, "Objetivos cumplidos correctos" );
 $contenido = "proyectos/objetivo-9.md".IO.slurp;
 %objetivos-cumplidos = estado-objetivos( @student-list, $contenido );
 say %objetivos-cumplidos;
-is( %objetivos-cumplidos.keys.elems, 2, "Objetivos 9 cumplidos correctos" );
+is( %objetivos-cumplidos.keys.elems, 2, "Número de personas en objetivo 9 correcto." );
 
 is %objetivos-cumplidos<amerigal>, CUMPLIDO, "Bien extraidos objetivos";
 
