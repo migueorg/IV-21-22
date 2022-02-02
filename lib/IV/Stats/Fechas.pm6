@@ -69,7 +69,7 @@ method new() {
     self.bless( :@fechas-entregas);
 }
 
-method entregas-de( Int $objetivo, $estudiante ){
+method entregas-de( Int $objetivo, Str $estudiante ){
     return @!fechas-entregas[$objetivo]{$estudiante};
 }
 
