@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Checkout this
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: Cache para las distros instaladas
         uses: actions/cache@v2
         id: meta6
