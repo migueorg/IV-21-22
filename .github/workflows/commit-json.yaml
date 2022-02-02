@@ -3,6 +3,8 @@ on:
   push:
     paths:
       - proyectos/objetivo*.md
+      - lib/**
+      - t/**
 
 jobs:
   test:
