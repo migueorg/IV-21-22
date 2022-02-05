@@ -41,7 +41,7 @@
 | https://github.com/Slowmybrosh/DietApp/pull/38                      | 0.0.7   | ✓         |
 | https://github.com/sorozcov/proyecto-iv-ugr/pull/34                 | 0.0.7   | ✓         |
 | <!-- Enlace de jlortega00 -->                                       |         |           |
-| [Xileon310](https://github.com/Xileon310/GoParty/pull/43)           | 0.0.11  | ✗         |
+| [Xileon310](https://github.com/Xileon310/GoParty/pull/44)           | 0.0.11  | *         |
 | https://github.com/Parka015/serie-motion/pull/27                    | 0.0.10  | ✗         |
 | <!-- Enlace de edusegrich -->                                       |         |           |
 | [LuisSS20](https://github.com/LuisSS20/DontWait/pull/28)            | 0.0.5   | ✓         |
