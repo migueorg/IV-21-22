@@ -8,7 +8,7 @@
 | https://github.com/Paszser/ComparerApp/pull/24                      | 0.0.13  | ✗         |
 | https://github.com/Mapachana/Predictor-COVID/pull/19                | 0.0.9   | ✓         |
 | https://github.com/eantoniocalo18/IV/pull/36                        | 0.0.11  | ✓         |
-| <!-- Enlace de NachoCarher -->                                      |         |           |
+| [NachoCarher](https://github.com/NachoCarher/MyHams/pull/31)        | 0.0.10  | *         |
 | <!-- Enlace de C L A -->                                            |         |           |
 | https://github.com/Balrrach/Instant-Eat/pull/22                     | 0.0.17  | ✓         |
 | https://github.com/alexespana/barpower/pull/31                      | 0.0.7   | ✓         |
@@ -16,7 +16,7 @@
 | <!-- Enlace de MarinoFajardo -->                                    |         |           |
 | https://github.com/danifm1321/proyectoIV/pull/18                    | 0.0.6   | ✓         |
 | <!-- Enlace de josevilchez247 -->                                   |         |           |
-| <!-- Enlace de arguellesm -->                                       |         |           |
+| https://github.com/arguellesm/faux/pull/18                          | 0.0.7   |           |
 | <!-- Enlace de DFolchA -->                                          |         |           |
 | <!-- Enlace de JaimeGM96 -->                                        |         |           |
 | [agr8](https://github.com/agr8/Planner-IV/pull/26)                  | 0.0.7   | ✓         |
@@ -30,7 +30,7 @@
 | <!-- Enlace de venrra -->                                           |         |           |
 | https://github.com/Antobio17/IV/pull/35                             | 0.1.4   | ✓         |
 | <!-- Enlace de manujurado1 -->                                      |         |           |
-| <!-- Enlace de migueorg -->                                         |         |           |
+| https://github.com/migueorg/SearchCulture/pull/32                   | 0.0.8   | *         |
 | https://github.com/jesusmarzor/Peluqueria/pull/46                   | 0.0.13  | ✓         |
 | <!-- Enlace de francisco3207 -->                                    |         |           |
 | https://github.com/amerigal/gestor-recibos/pull/28                  | 0.0.9   | ✓         |
@@ -43,7 +43,7 @@
 | <!-- Enlace de jlortega00 -->                                       |         |           |
 | [Xileon310](https://github.com/Xileon310/GoParty/pull/39)           | 0.0.9   | ✓         |
 | https://github.com/Parka015/serie-motion/pull/21                    | 0.0.9   | ✓         |
-| <!-- Enlace de edusegrich -->                                       |         |           |
+| [edusegrich](https://github.com/edusegrich/OpoTests/pull/34)        | 0.0.9   | *         |
 | [LuisSS20](https://github.com/LuisSS20/DontWait/pull/24)            | 0.0.4   | ✓         |
 | <!-- Enlace de juanfran00 -->                                       |         |           |
 | <!-- Enlace de Albertotc99 -->                                      |         |           |

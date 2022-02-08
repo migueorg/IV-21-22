@@ -19,11 +19,11 @@
 | <!-- Enlace de arguellesm -->                                       |         |           |
 | <!-- Enlace de DFolchA -->                                          |         |           |
 | <!-- Enlace de JaimeGM96 -->                                        |         |           |
-| <!-- Enlace de agr8 -->                                             |         |           |
+| [agr8](https://github.com/agr8/Planner-IV/pull/29)                  | 0.0.8   |           |
 | https://github.com/Olasergiolas/Go-AutoEQ/pull/46                   | 0.0.7   | ✓         |
 | https://github.com/lentes4k/cAppjon/pull/31                         | 0.1.1   | ✓         |
 | https://github.com/joaquingv12/car_workshop-maximizer/pull/40       | 0.0.8   | ✓         |
-| [gomares](https://github.com/gomares/More-mangas/pull/40)           | 0.0.7   | ✗         |
+| [gomares](https://github.com/gomares/More-mangas/pull/40)           | 0.0.8   | *         |
 | https://github.com/modejota/StoragIV/pull/29                        | 0.0.11  | ✓         |
 | https://github.com/argelion14/Sport-car/pull/32                     | 0.0.11  | ✓         |
 | <!-- Enlace de juanmihdz -->                                        |         |           |
@@ -41,15 +41,15 @@
 | https://github.com/Slowmybrosh/DietApp/pull/38                      | 0.0.7   | ✓         |
 | https://github.com/sorozcov/proyecto-iv-ugr/pull/34                 | 0.0.7   | ✓         |
 | <!-- Enlace de jlortega00 -->                                       |         |           |
-| [Xileon310](https://github.com/Xileon310/GoParty/pull/43)           | 0.0.11  | ✗         |
-| https://github.com/Parka015/serie-motion/pull/27                    | 0.0.10  | ✗         |
+| [Xileon310](https://github.com/Xileon310/GoParty/pull/44)           | 0.0.11  | *         |
+| https://github.com/Parka015/serie-motion/pull/38                    | 0.0.11  | *         |
 | <!-- Enlace de edusegrich -->                                       |         |           |
 | [LuisSS20](https://github.com/LuisSS20/DontWait/pull/28)            | 0.0.5   | ✓         |
 | <!-- Enlace de juanfran00 -->                                       |         |           |
 | <!-- Enlace de Albertotc99 -->                                      |         |           |
-| <!-- Enlace de aleveji -->                                          |         |           |
+| https://github.com/aleveji/BuscaRecetas/pull/17                     | 0.0.7   |           |
 | [paula1999](https://github.com/paula1999/Tune-in/pull/22)           | 0.0.10  | ✓         |
-| <!-- Enlace de xCyal -->                                            |         |           |
+| https://github.com/xCyal/A-Tracker/pull/40                          | 0.6.1   | *         |
 | <!-- Enlace de vlljuan99 -->                                        |         |           |
 | https://github.com/JAntonioVR/IV-2021-2022/pull/38                  | 0.0.10  | ✓         |
 | <!-- Enlace de pablozafra97 -->                                     |         |           |
