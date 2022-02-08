@@ -9,7 +9,7 @@
 | https://github.com/Paszser/ComparerApp/pull/20                      | 0.0.5   | ✓         |
 | https://github.com/Mapachana/Predictor-COVID/pull/9                 | 0.0.5   | ✓         |
 | https://github.com/eantoniocalo18/IV/pull/26                        | 0.0.5   | ✓         |
-| [NachoCarher](https://github.com/NachoCarher/MyHams/pull/22)        | 0.0.6   | *         |
+| [NachoCarher](https://github.com/NachoCarher/MyHams/pull/22)        | 0.0.6   | ✗         |
 | <!-- Enlace de C L A -->                                            |         |           |
 | https://github.com/Balrrach/IV-Proyecto/pull/16                     | 0.0.9   | ✓         |
 | https://github.com/alexespana/BarPower/pull/20                      | 0.0.5   | ✓         |
@@ -50,7 +50,7 @@
 | https://github.com/albertotc99/MercadoClubesPro/pull/15             | 0.0.5   | ✓         |
 | https://github.com/aleveji/BuscaRecetas/pull/11                     | 0.0.4   | ✓         |
 | https://github.com/paula1999/Tune-in/pull/14                        | 0.0.6   | ✓         |
-| https://github.com/xCyal/A-Tracker/pull/20                          | 0.3.1   | *         |
+| https://github.com/xCyal/A-Tracker/pull/20                          | 0.3.1   | ✓         |
 | [vlljuan99](https://github.com/vlljuan99/gasolinapp/pull/21)        | 0.0.2   | ✓         |
 | https://github.com/JAntonioVR/IV-2021-2022/pull/22                  | 0.0.6   | ✓         |
 | <!-- Enlace de pablozafra97 -->                                     |         |           |
