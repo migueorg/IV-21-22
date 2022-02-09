@@ -30,7 +30,7 @@
 | <!-- Enlace de venrra -->                                           |         |           |
 | https://github.com/Antobio17/IV/pull/38                             | 0.1.1   | ✓         |
 | <!-- Enlace de manujurado1 -->                                      |         |           |
-| <!-- Enlace de migueorg -->                                         |         |           |
+| https://github.com/migueorg/SearchCulture/pull/43                   | 0.0.9   | *         |
 | https://github.com/jesusmarzor/Peluqueria/pull/48                   | 0.0.14  | ✓         |
 | <!-- Enlace de francisco3207 -->                                    |         |           |
 | https://github.com/amerigal/gestor-recibos/pull/31                  | 0.0.10  | ✓         |
